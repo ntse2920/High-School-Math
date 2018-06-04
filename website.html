@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap Theme Company Page</title>
+        <title>High School Math</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,8 +16,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
-                body {
-                font-family: "Lato", sans-serif;
+            body {
+            font-family: "Lato", sans-serif;
             }
 
             .sidenav {
@@ -252,10 +252,10 @@
 
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Information</a>
-            <a href="#">Education</a>
-            <a href="#">Quiz</a>
+            <a href="file:///C:/Users/ntse2920/Documents/webserver/website/website.html">Home</a>
+            <a href="file:///C:/Users/ntse2920/Documents/webserver/website/information.html">Information</a>
+            <a href="file:///C:/Users/ntse2920/Documents/webserver/website/quiz%20page.html">Quiz</a>
+            <a href="file:///C:/Users/ntse2920/Documents/webserver/website/test.html">Test</a>
         </div>
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
@@ -269,9 +269,8 @@
             document.getElementById("mySidenav").style.width = "0";
         }
         </script>
-
-
             </div>
+
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">ABOUT</a></li>
@@ -292,7 +291,27 @@
         <div class="row">
             <div class="col-sm-8">
                 <h2>About The Website</h2><br>
-                <h4>This website will teach you the basics of 3 very important types of math: Algebra 1, Trigonometry, and Geometry.By the end of this education that is given you would have learned the basics to the three fundamental classes of math in High School.</p>
+                <h4>This website will teach you the basics of 3 very important types of math: Algebra 1, Trigonometry, and Geometry. By the end of this education that is given you would have learned the basics to the three fundamental classes of math in High School.</p>
+            <div class="container">
+            <h2>Information</h2>
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">About Us</button>
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Nicholas Tse and Jose Aranibar</h4>
+                    </div>
+                    <div class="modal-body">
+                    <p>Sophomores in Bayside High School and second year in CTE program. Learned and have basic knowledge about Javascript, Python, Mustache, and Bootstrap. They are hardworking and try their best to suceed in whatever task they are doing.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>    
+            </div>
             </div>
             <div class="col-sm-4">
                 <span class="glyphicon glyphicon-ok OPEN"></span>
@@ -315,13 +334,20 @@
 
         <!-- Container (algebra Section) -->
         <div id="algebra" class="container-fluid text-center">
+        <div class="col-sm-8">
             <h2>ALGEBRA 1</h2>
             <h4>The two main topics of Algebra 1 are polynomial factoring and inequalities. Some potential jobs for Algebra 1 are architecture, civil engineering, business, and teaching. </h4>
-            <br>
+        </div>
+         <div class="col-sm-4">
+                <span class="glyphicon glyphicon-book OPEN"></span>
+        </div>
         </div>
 
         <!-- Container (trig Section) -->
         <div id="trig" class="container-fluid text-center bg-grey">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal OPEN"></span>
+            </div>
             <h2>TRIGONOMETRY</h2><br>
             <h4>The three main topics of Trigonometry are statistics, logarithms, and quadratics. Some potential jobs for Trigonometry are navigators, radiologist, surveyors, and teaching.</h4>
             <div class="row text-center slideanim">
@@ -329,12 +355,15 @@
         </div><br>
         </div>
         </div>
-        <div id="geo" class="container-fluid text-center"> 
+
+        <div id="geo" class="container-fluid text-center">
+        <div class="col-sm-8"> 
             <h2>GEOMETRY</h2>
             <h4>The three main topics of Geometry are right triangles, segments in triangles, and transformation.Some potential jobs for Geometry are transportation industry, construction industry, art, architecture, and medicine.</h4>
-            <div class="row text-center slideanim">
-            <div class="col-sm-4">
-            </div><br>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-education OPEN slideanim"></span>
+        </div>
         </div>
 
         <script>
@@ -366,7 +395,6 @@
 <body>
 
 <div class="container">
-  <h2>Math</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
