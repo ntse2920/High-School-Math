@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/cSss?family=Lato" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <title>Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
+            font-family: "Lato", sans-serif;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: coral;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: white;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+            body {
+                font: 400 15px Lato, sans-serif;
+                line-height: 1.8;
+                color: white;
+            }
+            h2 {
+                font-size: 24px;
+                text-transform: uppercase;
+                color: #303030;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+            h4 {
+                font-size: 19px;
+                line-height: 1.375em;
+                color: #303030;
+                font-weight: 400;
+                margin-bottom: 30px;
+            }  
+
+            .jumbotron {
+                background-color: lightcoral;
+                color: #fff;
+                padding: 100px 25px;
+                font-family: Montserrat, sans-serif;
+            }
+            .container-fluid {
+                padding: 60px 50px;
+            }
+            .bg-grey {
+                background-color: #f6f6f6;
+            }
+            .OPEN-small {
+                color: lightcoral;
+                font-size: 50px;
+            }
+            .OPEN {
+                color: lightcoral;
+                font-size: 200px;
+            }
+            .thumbnail {
+                padding: 0 0 15px 0;
+                border: none;
+                border-radius: 0;
+            }
+            .thumbnail img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .carousel-control.right, .carousel-control.left {
+                background-image: none;
+                color: lightcoral;
+            }
+            .carousel-indicators li {
+                border-color: lightcoral;
+            }
+            .carousel-indicators li.active {
+                background-color: lightcoral;
+            }
+            .item h4 {
+                font-size: 19px;
+                line-height: 1.375em;
+                font-weight: 400;
+                font-style: italic;
+                margin: 70px 0;
+            }
+            .item span {
+                font-style: normal;
+            }
+            .panel {
+                border: 1px solid lightcoral; 
+                border-radius:0 !important;
+                transition: box-shadow 0.5s;
+            }
+            .panel:hover {
+                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+            }
+            .panel-footer .btn:hover {
+                border: 1px solid lightcoral;
+                background-color: #fff !important;
+                color: lightcoral;
+            }
+            .panel-heading {
+                color: #fff !important;
+                background-color: lightcoral !important;
+                padding: 25px;
+                border-bottom: 1px solid transparent;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .panel-footer {
+                background-color: white !important;
+            }
+            .panel-footer h3 {
+                font-size: 32px;
+            }
+            .panel-footer h4 {
+                color: #aaa;
+                font-size: 14px;
+            }
+            .panel-footer .btn {
+                margin: 15px 0;
+                background-color: lightcoral;
+                color: #fff;
+            }
+            .navbar {
+                margin-bottom: 0;
+                background-color: lightcoral;
+                z-index: 9999;
+                border: 0;
+                font-size: 12px !important;
+                line-height: 1.42857143 !important;
+                letter-spacing: 4px;
+                border-radius: 0;
+                font-family: Montserrat, sans-serif;
+            }
+            .navbar li a, .navbar .navbar-brand {
+                color: #fff !important;
+            }
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: lightcoral !important;
+                background-color: #fff !important;
+            }
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: #fff !important;
+            }
+            @keyframes slide {
+                0% {
+                opacity: 0;
+                transform: translateY(70%);
+                } 
+                100% {
+                opacity: 1;
+                transform: translateY(0%);
+                }
+            }
+            @-webkit-keyframes slide {
+                0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+                } 
+                100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+                }
+                .btn-lg {
+                    width: 100%;
+                    margin-bottom: 35px;
+                }
+            }
+            @media screen and (max-width: 480px) {
+                .OPEN {
+                    font-size: 150px;
+                }
+            }
+        </style>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        </script>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="website.html">Home</a>
+            <a href="information.html">Information</a>
+            <a href="quiz page.html">Quiz</a>
+            <a href="test.html">Test</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open</span>
+
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#algebra">ALGEBRA 1</a></li>
+                <li><a href="#trig">TRIGONOMETRY</a></li>
+                <li><a href="#geo">GEOMETRY</a></li>
+            </ul>
+            </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron text-center">
+        <h1>Information</h1> 
+        <p>High School Math</p> 
+        </div>
+
+        <div id="algebra" class="container-fluid text-center">
+        <div class="row">
+            <h2>Algebra 1</h2><br>
+                <h4><strong>Polynomial Factoring</strong><h4>
+                    <p>Factoring polynomials are one of the basic skills needed to known in algebra 1. To factor the polynomial 6x<sup>4</sup>-12x<sup>3</sup>+4x<sup>2</sup></p>
+                    <p>follow these steps:<br><br><strong>(1) Break down every term into prime factors</strong><br> This expands the expression to<br>3*2*x*x*x*x-2*2*3*x*x*x+2*2*x*x</p><br><br><strong>(2)Look for factors that appear in every single term to determine the GCF.</strong><br>In this example, you can see one 2 and two x’s in every term. These are bolded in the following:<br>3*<strong>2*x*x</strong>*x*x-<strong>2</strong>*2*3*x*x*x+2<strong>*2*x*x</strong><br><br><strong>(3)Factor the GCF out from every term in front of parentheses, and leave the remnants inside the parentheses.</strong><br>You now have<br>2*x*x(3*x*x-2*3*x+2)<br><br><strong>(4)Multiply out to simplify each term.</strong><br>This gives you<br>2x<sup>2</sup>(3x<sup>2</sup>-6x+2)<br><br><strong>(5)Distribute to make sure the GCF is correct.</strong><br>If you multiply the 2x^2 inside the parenthesis, you get 6x<sup>4</sup>-12x<sup>3</sup>+4x<sup>2</sup>. You can now say with confidence that 2x<sup>2</sup> is the GCF.<br><br>This following website can further your understanding in this topic. Feel free to click on the link and explore the math of polynomials<br><p>
+                    <br><br><h4><strong>Inequalities</strong><h4>
+                    <p>One application of our ability to find intercepts and sketch a graph of polynomials is the ability to solve polynomial inequalities. It is a very common question to ask when a function will be positive and negative. We can solve polynomial inequalities by either utilizing the graph, or by using test values.</p>
+                    <p>Inequalities that have the same solution are called equivalent. There are properties of inequalities as well as there were properties of equality. All the properties below are also true for inequalities involving ≥ and ≤.<br>The addition property of inequality says that adding the same number to each side of the inequality produces an equivalent inequality<br><br>   If x > y,then x+z > y+z<br>      If x < y,then x +z < y +z If x < y ,then x+z < y +z<br><br>The subtraction property of inequality tells us that subtracting the same number from both sides of an inequality gives an equivalent inequality.<br>If x>y,then x−z>y−z If x>y,then x−z>y−z<br> If x < y,then x−z < y−z If x < y,then x−z < y−z<br><br>The multiplication property of inequality tells us that multiplication on both sides of an inequality with a positive number produces an equivalent inequality.<br>If x > y and z > 0,then xz > y z If x > y and z > 0,then xz > yz<br>If x < y and z > 0 ,then xz < yz If x < y and z > 0,then xz < yz<br><br>Multiplication in each side of an inequality with a negative number on the other hand does not produce an equivalent inequality unless we also reverse the direction of the inequality symbol<br>If x > y and z < 0 ,then xz < yz If x > y and z < 0 ,then xz < yz<br>If x < y and z < 0,then xz > yz If x < y and z <0 ,then xz > yz<br><br>The same goes for the division property of inequality. Division of both sides of an inequality with a positive number produces an equivalent inequality<br>If x > y and z > 0,then xz > yz If x > y and z > 0,then xz > yz <br>If x < y and z > 0,then xz < yz If x < y and z > 0,then xz < yz<br><br>And division on both sides of an inequality with a negative number produces an equivalent inequality if the inequality symbol is reversed.<br>If x > y and z < 0,then xz < yz If x > y and z < 0,then xz < yz<br>If x < y and z < 0,then xz > yz If x < y and z < 0,then xz > yz<br><br>To solve a multi-step inequality you do as you did when solving multi-step equations. Take one thing at the time preferably beginning by isolating the variable from the constants. When solving multi-step inequalities it is important to not forget to reverse the inequality sign when multiplying or dividing with negative numbers.</p>
+                    <br><a href="http://mathbits.com/AlgebraBits/">For a further understanding in Algebra 1 click on this link</a>
+
+        </div> 
+        </div>
+<div id="trig" class="container-fluid text-center bg-grey">
+            <div class="row">
+            <h2>Trigonometry</h2><br>
+                <h4><strong>Logarithms</strong><h4>
+                    <p>How to Understand Logarithms<p>
+                    <p>(1)Know the difference between logarithmic and exponential equations. This is a very simple first step. If it contains a logarithm (for example: logax = y) it is logarithmic problem. A logarithm is denoted by the letters "log". If the equation contains an exponent (that is, a variable raised to a power) it is an exponential equation. An exponent is a superscript number placed after a number.<br>Logarithmic: log<sub>a</sub>x = y<br>Exponential: a<sup>y</sup> = x<br><br>(2)Know the parts of a logarithm. The base is the subscript number found after the letters "log"--2 in this example. The argument or number is the number following the subscript number--8 in this example. Lastly, the answer is the number that the logarithmic expression is set equal to--3 in this equation.<br><br>(3)Know the difference between a common log and a natural log.<br>Common logs have a base of 10. (for example, log10x). If a log is written without a base (as log x), then it is assumed to have a base of 10.<br>Natural logs: These are logs with a base of e. e is a mathematical constant that is equal to the limit of (1 + 1/n)n as n approaches infinity, approximately 2.718281828. (It has many more digits than those written here.) logex is often written as ln x.<br>Other Logs: Other logs have the base other than that of the common log and the E mathematical base constant. Binary logs have a base of 2 (for the example, log2x). Hexadecimal logs have the base of 16 (for the example log16x (or log#0fx in the notation of hexadecimal). Logs that have the 64th base are indeed quite complex, and therefore are usually restricted to the Advanced Computer Geometry (ACG) domain.<br><br>(4)Know and apply the properties of logarithms. The properties of logarithms allow you to solve logarithmic and exponential equations that would be otherwise impossible. These only work if the base a and the argument are positive. Also the base a cannot be 1 or 0. The properties of logarithms are listed below with a separate example for each one with numbers instead of variables. These properties are for use when solving equations.<br>log<sub>a</sub>(xy) = log<sub>a</sub>x + log<sub>a</sub>y<br>A log of two numbers, x and y, that are being multiplied by each other can be split into two separate logs: a log of each of the factors being added together. (This also works in reverse.)<br>Example:<br>log<sub>2</sub>16 =<br>log<sub>2</sub>8*2 =<br>log<sub>2</sub>8 + log<sub>2</sub>2<br>loga(x/y) = log<sub>a</sub>x - log<sub>a</sub>y<br>A log of a two numbers being divided by each other, x and y, can be split into two logs: the log of the dividend x minus the log of the divisor y.<br><br>(5)Practice using the properties. These properties are best memorized by repeated use when solving equations. Here's an example of an equation that is best solved with one of the properties<br>4x*log2 = log8 Divide both sides by log2<br>4x = (log8/log2) Use Change of Base.<br>4x = log28 Compute the value of the log.<br>4x = 3 Divide both sides by 4. x = 3/4 Solved. This is very helpful. I now understand logs.<br><br></p>
+
+                <h4><strong>Quadratic Equations</strong><h4>
+                <p>Method 1</p>
+                <p>(1)Combine all of the like terms and move them to one side of the equation. The first step to factoring an equation is to move all of the terms to one side of the equation, keeping the x<sup>2</sup> term positive. To combine the terms, add or subtract all of the  x<sup>2</sup> terms, the x terms, and the constants (integer terms), moving them to one side of the equation so that nothing remains on the other side. Once the other side has no remaining terms, you can just write "0" on that side of the equal sign<br><br>(2)Factor the expression. To factor the expression, you have to use the factors of the x<sup>2</sup> term (3), and the factors of the constant term (-4), to make them multiply and then add up to the middle term, (-11). Here's how you do it:<br>Since 3x<sup>2</sup> only has one set of possible factors, 3x and x, you can write those in the parenthesis:  (3x\pm ?)(x\pm ?) = 0}<br>Then, use process of elimination to plug in the factors of 4 to find a combination that produces -11x when multiplied. You can either use a combination of 4 and 1, or 2 and 2, since both of those numbers multiply to get 4. Just remember that one of the terms should be negative, since the term is -4.<br>By trial and error, try out this combination of factors {\displaystyle (3x+1)(x-4)}. When you multiply them out, you get {\displaystyle 3x^{2}-12x+x-4}. If you combine the terms {\displaystyle -12x} and {\displaystyle x}, you get {\displaystyle -11x}, which is the middle term you were aiming for. You have just factored the quadratic equation.<br><br>(3)Set each set of parenthesis equal to zero as separate equations. This will lead you to find two values for x that will make the entire equation equal to zero<<br><br>(4)Solve each "zeroed" equation independently. In a quadratic equation, there will be two possible values for x. Find x for each possible value of x one by one by isolating the variable and writing down the two solutions for x as the final solution.<br><br>(5)Check you work and subsitute your answer for x in the main equation to test if you are correct</p>
+                <br><a href="http://mathbits.com/Algebra2Bits/">For a further understanding in Trigonometry click on this link</a>
+
+        </div>
+        </div>
+
+        <div id="geo" class="container-fluid text-center">
+        <div class="row"> 
+            <h2>GEOMETRY</h2>
+           <h4><strong>Line Segments</strong><h4>
+                    <p>How to Measure Line Segments</p>
+                    <p>The length of a line segment can be measured (unlike a line) because it has two endpoints.<br><br>While the length or the measure is simply written AB. The length could either be determined in Metric units (e.g. millimeters, centimeters or meters) or Customary units (e.g. inches or foot).<br><br>Two lines could have the same measure but still not be identical.<br><br>AB and CD have the exact same measure and are said to be congruent<br><br>Line AB is congruent to the line CD.</p>
+            <h4><strong><br>Transformations</strong><h4>
+                    <p>Types Of Tranformations</p>
+                    <p>Rotation: rotating an object about a fixed point without changing its size or shape<br>Translation: moving an object in space without changing its size, shape or orientation<br>Dilation: expanding or contracting an object without changing its shape or orientation<br>Reflection: flipping an object across a line without changing its size or shape</p>
+                    <br><a href="http://mathbits.com/GeometryBits/">For a further understanding in Geometry click on this link</a>
+        </div>
+        </div>
+            $(document).ready
+    <script>(function(){
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+                if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
+                    window.location.hash = hash;
+                });
+                } 
+            });
+            $(window).scroll(function() {
+                $(".slideanim").each(function(){
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                    }
+                });
+            });
+            })
+        </script>
+    </body>
+</html>
+
