@@ -343,7 +343,7 @@
             var score = 0;
             for(var i = 1; i <= 20; i++){
                 var correctAnswer = data.Test["q" + i].answer;
-                var userAnswer = document.getElementById("q"+i);
+                var userAnswer = document.getElementById("q"+i).value;
                 if(correctAnswer == userAnswer){
                     score ++;
                 }
